@@ -1,0 +1,187 @@
+
+/*  
+convertir contenedor div en contenedores flexibles
+en css poner las siguientes propiedades.
+1. display: flex;
+2. flex-direction: row/column
+
+3. alineacion en eje principal: es el mas largo, el centrado se hace con la propiedad (justify-content)
+    
+4. alineacion en eje secundario; es el eje perpendicular al principal, la alineacion de los elementos verticalmente se hace con la propiedad (align-items)
+*/
+
+
+/* Personalizacion de la barra de navegacion  */
+
+.navbar{    padding: 2rem;
+            background-color: #f5f6f7;      
+
+        }
+
+
+      /*  nav .collapse{
+            background-color: #f5f6f7;  
+
+        }*/
+
+/* alineacion de los elementos de una caja usando flexbox */
+.navbar-collapse{   align-items: center;
+                    justify-content: space-between;}
+
+.hero{  background-color: white;
+        min-height: 450px;
+        text-align: center;}
+
+section{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0,40px;
+        margin: 0,40px;
+        }
+
+h1{ font-size: 2.5rem;
+    font-family: "Rubik Dirt", system-ui;
+    font-weight: 400;
+    font-style: normal;}
+
+/*.dark-section{
+    color: white;
+    background-color: #1b1b32;
+
+}*/
+
+.clear-section{ color: black;
+                background-color: white;}
+
+.contenedor .title-section .title-service{  font-size: 2rem;
+                                            padding: 15px;
+                                            font-family: 'Rubik Dirt', cursive;}
+
+
+.contenedor .text-section{font-size: 1.2rem;}
+
+
+/* hero */
+
+.hero{  background-color: white;
+        min-height: 450px;
+        text-align: center; 
+        margin-bottom: 50px;}
+
+
+.hero-principal{ padding: 3rem;}
+
+
+/* about me */
+.about-me{ /*height: 1000px;*/
+            padding: 10px;
+            margin: 20px;}
+
+
+
+
+/*skills*/
+.skill{padding: 40px;}
+
+.title-skill{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px, 0;}
+
+.img-skill{
+    margin-top: 10px;
+    height: 50px;   }
+
+.paragraph-skill{   }
+
+
+
+
+
+/*service*/
+.service{padding: 40px;}
+
+.title-service{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px, 0;}
+
+.img-service{
+/*    margin-top: 10px;*/
+    height: 50px;   }
+
+
+/*project*/
+.project{
+            padding: 40px;
+        /*  margin: 20px;*/
+        }
+
+.title-project{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;}
+
+.img-project{
+   /* margin: 20px;*/
+    height: 150px;   }
+
+.paragraph-project{ margin: 20px; }
+
+.link-project{  margin-bottom: 60px;}
+
+
+
+
+
+/* contenedores */
+
+.about-me .contenedor{  max-width: 800px;
+                        text-align: center;
+                        padding: 100px,0;
+                        margin: 50px,0;
+                    }
+
+.hero-imagen-perfil{    width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        margin: 20px;}
+
+.hero-principal h2{ font-size: 1.5rem;
+                    color: #615151;}
+
+.project .contenedor-project{  max-width: 800px;
+                            text-align: center;}
+
+.row-project{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.pie-de-pagina{padding: 10px;
+    background-color: #f5f6f7;
+    color: black;
+}
+
+
+
+
+
+
+/*adaptable responsivo*/
+
+/*esconde el icono */
+@media screen and (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+
+/*    implementacion de puntos de rupturas para la imagen del hero-inferior*/
+/*@media screen and (min-width:700px){
+    .hero-inferior-imagen{ max-width:600px; }
+    }*/
+
